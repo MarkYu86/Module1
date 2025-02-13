@@ -20,13 +20,11 @@ button2.addEventListener("click", function () {
 });
 
 function changeButton1() {
-  // do something here
   document.getElementById("column1").style.backgroundColor = "red";
   document.getElementById("heading1").textContent = "Cat";
 }
 
 function changeButton2() {
-  // do something here
   document.getElementById("column2").style.backgroundColor = "green";
   document.getElementById("heading2").textContent = "Dog";
 }

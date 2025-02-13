@@ -71,7 +71,7 @@ console.log(divide(7,0,1))
 function greet(name) {
     console.log(`Hello ${name}`);
     console.log("hello " + name)
-    // Figure out wtfs ` and $
+    //` and $ means using 
 }
 greet("mark")
 

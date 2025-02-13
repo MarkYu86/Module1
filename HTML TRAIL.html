@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="favicon"type="image" href="/Users/yuzihao/Desktop/Front end Practice /HTML TRAIL/IMG/WechatIMG43.ico">
+  <title>MK Html trail</title>
+
+<style>
+h1{color:rgba(192, 195, 210, 0.999)}
+p{color:rgb(186, 182, 181);
+background-color:hsla(181, 73%, 44%, 0);
+border: 10px solid rgba(10, 63, 70, 0.918);
+margin:10px}
+table,th,td,tr{border-radius: 10px;
+  text-align:center;
+  border: 2px dashed hsla(208, 76%, 49%, 0.7);
+  border-collapse:inherit;color:lightblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: darkslateblue;}
+th{background-color: rgba(0, 255, 255, 0.391);}
+th:hover{background-color: deepskyblue;}
+td:hover{background-color:hsl(280, 100%, 17%);}
+a:visited{color:rgb(247, 4, 4);
+  background-color:hsl(0, 84%, 60%)}
+a:hover{color:hsla(1,100%,100%,1);
+  background-color:hsla(0, 0%, 100%, 0.113);
+  transition: 0.5s;}
+a:active{color:yellow;background-color:ligntyellow}
+body{background-image:url("https://img2.baidu.com/it/u=2331639645,2283005083&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:150%150%;
+font-family: 'Courier New', Courier, monospace;}
+.grid{display:flex;grid-template-columns: 33%,33%,33%;}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  position:sticky;
+ }
+nav li {
+  display: inline-block;
+  float: none;
+}
+nav li a:hover{transition:0.5s;
+  color: hsl(0, 100%, 81%);;}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  margin: 5px 60px;
+  padding: 5px 20px;
+  text-decoration: none;}
+
+#trans{background-color:hsla(0, 76%, 62%, 0.714);
+  text-align: center;
+display:inline-block;
+transition:2s ease-in-out;
+width: 150px;/*一定要有宽度*/
+}
+#trans:hover{width: 300px;
+  text-align: center;
+}
+</style>
+<meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body style="background-color:rgba(100,255,36,0.3)">
+
+  <br>
+<h1 title="HTML tutorial"style="text-align:center">First page</h1>
+
+<h1 title="i'm a title"style="text-align:center";>this is what im doing</h1>
+<div style="text-align: center;"><a href="#bottom">Jump to bottom</a></div>
+<hr>
+<nav>
+  <ul style="list-style: none;text-transform:uppercase;">
+  <li><a href="#table">Table</a></li>
+  <li><a href="#font">Font</a></li>
+  <li class="dropdown"></a><a href="#image">Image</a></li>
+  <li><a href="#contact">contact</a></li>
+</ul>
+</nav>
+
+<hr>
+<form autocomplete="on" action="/server.php">
+  <label for="html" style="color: aquamarine;">
+    html:</label>
+  <input type="text"pattern="[A-Za-z0-9]{4}" id="html"placeholder="html">
+
+  <label for="css" style="color: aquamarine;">css:</label>
+  <input type="password"id="css" placeholder="css">
+  <input type="submit" value="START"><br>
+
+<span style="color: aquamarine;">single chosen:</span>
+  <input type="radio"name="male"><span style="color:blue">male</span>  
+  <input type="radio"name="male"><span style="color:blue">male</span>  
+  <input type="radio"name="male"><span style="color:blue">male</span><br>
+  <label for="lang" style="color: aquamarine;">Select Form:</label>
+  <select id="select">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="javascript">Javascript</option>
+  </select>
+  <input type="submit" action="/server.php"><br>
+
+  <label for="prework" style="color: aquamarine;">prework:</label>
+  <input type="checkbox" name="prework"><label style="color: aquamarine;">CSS</label>
+  <input type="checkbox" name="prework"><label style="color: aquamarine;">JAVA</label>
+  <input type="checkbox" name="prework"><label style="color: aquamarine;">HTML</label>
+  </form>
+<hr>
+<p title="i'm a paragraph">just a normal paragraph</p><hr>
+<p title="i'm a paragraph">just a normal<br> paragraph with<br> line breaks</p><hr>
+
+<pre title="this is better than br"style="color:red;background-color:hsla(240,80%,95%,1);display:inline-block">
+This is a paragraph with red color
+and different lines 
+I dont know why I can use pre but we
+still have br.
+</pre><hr>
+
+<p> Trying to do some hyperlink down here:</p>
+<a href="http://www.google.com"target="_blank">link in bio</a><hr>
+<p>lets try paragraph with hyperlink which is <a href="http://www.google.co.nz"target="_blank">google</a></p><hr>
+
+<p id="image">photo practice<img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"alt="baidu"usemap="#baidu"width=500></p><hr>
+<map name="baidu">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="http://www.baidu.com"></map>
+
+<p>photo hyperlink<br><a href="https://www.baidu.com" target="_blank"><img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="baidu"width=500></a></p>
+<div>
+  <iframe scr="http://www.baidu.com" name="baidu"style="width:550px;height:100px"></iframe>
+  <br>
+  <div style="text-align: center;"><a href="http://www.baidu.com" target="baidu">iframe practice</a></div>
+</div>
+
+<p style="color:yellow">stylish paragraph</p>
+<hr>
+
+<p style="font-size:200%"id="font"><sub>this </cite><sup>paragraph </cite><i>shows </i><del>daffarant</del><bold>different </bold> <em>format </em><mark>trying </mark><sub>as </sub><strong>much<!--this is not showing--> </strong><ins>as </ins><bold>i </bold><mark>can.</mark><hr>
+
+<p><abbr title="what the fuck">WTF</abbr> is this.</p>
+<hr>
+
+<table id="table" style="height: 200px;width:615px">
+  <caption Style="padding-top: 10px;padding-bottom: 10px;color:rgb(72, 170, 255);font-size: 50px;">Tabele trial</caption>
+  <tr><th>Time</th><th colspan="2">name</th>
+    <th>moble number</th>
+    <th>address</th>
+  </tr>
+  <tr><td>8:00</td>
+  <td>xiaoming</td>
+  <td>xiaohong</td>
+  <td>987654321<br>12345789</td>
+  <td>moon</td>
+  </tr>
+  <tr><td>9:15</td><td>xiaoming</td>
+    <td>xiaohong</td>
+    <td>123456789</td>
+    <td>earth</td>
+  </tr>
+</table>
+<hr>
+
+<div id="zebra">
+<table style="width: 615px;height:10px">
+  <caption Style="text-align: center;padding-top: 10px;padding-bottom: 10px;color:rgb(72, 170, 255);font-size: 50px;">Zebra Tabele trial<span style=color:red>(need different style)</span></caption>
+<th>???</th><th>!!!!!</th><th>@@@</th>
+<tr>
+  <td>????</td>
+  <td>!!!!</td>
+  <td>@@@@</td>
+</tr>
+<tr><td>?????</td><td>!!!!!!!</td><td>@@@@@@</td></tr>
+</table></div>
+<hr>
+
+<div class="grid">
+<div style="color: bisque;background-color: blueviolet;width: 200px;">
+<label>unordered HTML list:</label>
+<ul><li>table</li><br><li>chairs</li><br><li>pot</li><br><li>pan</li><br><li>dishwash</li>
+  <li>plates</li></ul>
+</div>
+<div style="width: 200px;color: rgb(141, 141, 141);background-color: rgba(77, 77, 176, 0.521);">
+<label>ordered HTML list:</label>
+<ol><li>bed</li><br><li>cabinet</li><br><li>bedside table</li><br><li>Desk</li><br><li>chairs</li></ol>
+</div>
+<div style="width:200px;background-color: rgba(137, 43, 226, 0.528);color: azure;">
+<label>description HTML list:</label>
+<dl><dt>table</dt><dd>4 legs</dd><dd>6 seaters</dd><dt>chairs</dt><dd>no backs</dd>
+  <dd>wooden</dd></dl>
+  </div>
+</div>
+<hr>
+
+  <h1 style="color: brown;font-size: 50px;
+  text-align: center;
+  background-color: hsla(280, 100%, 17%, 0.591);">Javascript trail  </h1>
+<div>
+  <button type="button" onclick="myFunction()">this is a Click</button>
+  <script>
+    function 
+    myFunction(){document.getElementById("js").innerHTML="Succeed!";
+    }
+  </script>
+  <p id="js">This paragraph will change.</p>
+  <button type="button" id="javascript" onclick="myFunction()">this will change style</button>
+
+  <p id="javascript">This paragraph will change style.</p>
+  </div>
+
+<div><table><th>HTML Layout Elements</th></table></div>
+<br>
+<form>
+  <label id="comment" style="color:yellow">Comment below:</label><br>
+  <textarea style="width:600px;height:100px;"placeholder="Leave your comment here."></textarea>
+  <input type="submit" value="Send" action="server.php">
+</form>
+<hr>
+<label style="color: yellow;">the output element</label>
+<form action="server.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+  <input type="range" id="a" placeholder="50">100+
+  <input type="number" id="b" name="b" value="50">=
+<output name="x" for="a b"></output>
+<input type="submit" value="calculation">
+</form>
+<form><label style="color: yellowgreen;">Select from file:</label>
+<input type="file" id="file" name="file.."><br>
+<input type="submit" value="submit photo" multiple="3" action="server.php"></form>
+<hr>
+<p id="trans">tansition trial</p>
+
+
+
+<footer>
+<address id="contact" style="text-align:center"> email address is:
+<a href="yuzihao.1997@gmail.com">yuzihao.1997@gmail.com</a><br><bdo dir="rtl">uYkraM</bdo></address>
+<a href="#top"style="color:red;"> Back to top</a>
+</footer>
+<hr>
+</body>
+</html>
